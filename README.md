@@ -5,7 +5,7 @@ The best minecraft afk bot
 
 ## Screenshots
 
-![Logo](https://imgur.com/a/uXI0C7n)
+![Logo](https://imgur.com/a/uXI0C7n.png)
 
 
 ## Installation
