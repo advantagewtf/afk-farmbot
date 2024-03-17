@@ -3,7 +3,7 @@ from flask import Flask, request, jsonify
 app = Flask(__name__)
 
 # Dummy list of valid keys
-valid_keys = ["free", "free2", "free3"]
+valid_keys = ["free", "key", "free123"]
 
 
 @app.route("/check_key", methods=["POST"])

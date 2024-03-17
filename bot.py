@@ -1,7 +1,7 @@
 import time
 import random
 import pyautogui
-import keyboard.mouse as mouse
+import mouse
 import pygetwindow
 import cv2
 import numpy as np
@@ -11,6 +11,9 @@ import keyhandler as key
 import os
 import colorama
 from extrafuncs import *
+import threading
+import ctypes
+import string
 
 green = colorama.Fore.GREEN
 yellow = colorama.Fore.YELLOW
@@ -18,37 +21,37 @@ reset = colorama.Fore.RESET
 red = colorama.Fore.RED
 blue = colorama.Fore.BLUE
 jumpPercentage = 0  # Jump every X hits
-hotbar_keybind = "r"
-jumpKeybind = " "
+hotbar_keybind = "q"
+jumpKeybind = "space"
 
-hit_delay = 0.63  # 0.63 is exact time but a lil delay in case of fps or lag error
-enable_Debug = True
-eat_Food = False
-food_Hotkey = "7"
-foodPng = "full.png"
-advanced = False
-sellitem = False
-sellComand = "sellall inventory"  # no /
-sellOften = 100  # every 100 cycles
-spam = False
-hold = True
-logo = f"""
-    {blue}
+
+
+def set_console_title():
+    while True:
+        randomchar = "".join(random.choices(string.ascii_letters + string.digits, k=16))
+        ctypes.windll.kernel32.SetConsoleTitleW(randomchar)
+        time.sleep(0.01)
+
+
+cstitle = threading.Thread(target=set_console_title)
+cstitle.daemon = True  # Set the thread as a daemon thread
+cstitle.start()
+abk = r"""
            ______ _  __           ____   ____ _______ 
      /\   |  ____| |/ /          |  _ \ / __ \__   __|
     /  \  | |__  | ' /           | |_) | |  | | | |   
    / /\ \ |  __| |  <            |  _ <| |  | | | |   
   / ____ \| |    | . \           | |_) | |__| | | |   
- /_/    \_\_|    |_|\_\          |____/ \____/  |_|   
-                                                      
-==============     {red}Made By Drexxy{blue}    =====================
+ /_/    \_\_|    |_|\_\          |____/ \____/  |_|   """
 
+
+logo = f"""
+{blue}{abk}
+==============     {red}Made By Drexxy{blue}    =====================
 """
 
 
-SpamMessages = [
-   
-]
+SpamMessages = [""]
 
 
 while not keyauth(input("Enter Key:")):
@@ -73,7 +76,7 @@ def loop():
     y += 1
     sell += 1
     s += 1
-    
+
     if spam:
         if s == 5:
             key.openChat()

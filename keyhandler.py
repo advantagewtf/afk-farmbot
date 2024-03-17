@@ -1,6 +1,6 @@
 import keyboard
 import time
-
+import mouse
 
 def hold(key):
     keyboard.press(key)

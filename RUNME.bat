@@ -3,7 +3,8 @@
 echo Starting keyhandler
 echo Done
 echo Echo running python files
-start server.exe
+python sever.py
+
 echo Done with server
 echo Running Bot
 
