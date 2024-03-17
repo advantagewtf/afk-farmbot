@@ -16,7 +16,17 @@ yellow = colorama.Fore.YELLOW
 reset = colorama.Fore.RESET
 red = colorama.Fore.RED
 blue = colorama.Fore.BLUE
-
+hit_delay = 0.63  # 0.63 is exact time but a lil delay in case of fps or lag error
+enable_Debug = True
+eat_Food = False
+food_Hotkey = "7"
+foodPng = "full.png"
+advanced = False
+sellitem = False
+sellComand = "sellall inventory"  # no /
+sellOften = 100  # every 100 cycles
+spam = False
+hold = True
 logo = f"""
     {blue}
            ______ _  __           ____   ____ _______ 
