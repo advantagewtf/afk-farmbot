@@ -7,14 +7,14 @@ import cv2
 import numpy as np
 import pyautogui
 import requests
-import keyhandler as key
 import os
 import colorama
-from extrafuncs import *
 import threading
 import ctypes
 import string
 
+from util.extrafuncs import * 
+from util.keyhandler import *
 green = colorama.Fore.GREEN
 yellow = colorama.Fore.YELLOW
 reset = colorama.Fore.RESET
@@ -36,26 +36,11 @@ def set_console_title():
 cstitle = threading.Thread(target=set_console_title)
 cstitle.daemon = True  # Set the thread as a daemon thread
 cstitle.start()
-abk = r"""
-           ______ _  __           ____   ____ _______ 
-     /\   |  ____| |/ /          |  _ \ / __ \__   __|
-    /  \  | |__  | ' /           | |_) | |  | | | |   
-   / /\ \ |  __| |  <            |  _ <| |  | | | |   
-  / ____ \| |    | . \           | |_) | |__| | | |   
- /_/    \_\_|    |_|\_\          |____/ \____/  |_|   """
 
-
-logo = f"""
-{blue}{abk}
-==============     {red}Made By Drexxy{blue}    =====================
-"""
 
 
 SpamMessages = [""]
 
-
-while not keyauth(input("Enter Key:")):
-    pass
 os.system("cls")
 print(logo)
 print(f"{yellow}[INFO]{reset}: Wating 5 seconds tab to game!")
@@ -85,11 +70,11 @@ def loop():
             key.openChat()
             spamm += 1
             s = 0
-            debug(f"Spammed {spamm} times")
+            debug(f"spammed {spamm} times")
     if not jumpPercentage == 0:
         if x == jumpPercentage:
             key.click(jumpKeybind)
-            debug("Jumped")
+            debug("jumped")
             x = 0
     if sellitem:
         if sell == sellOften:

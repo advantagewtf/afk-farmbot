@@ -11,7 +11,7 @@ def release(key):
 
 
 def openChat():
-    keyboard.press_and_release("enter")
+    keyboard.press_and_release("/")
 
 
 def Type(key):
