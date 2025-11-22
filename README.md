@@ -1,74 +1,162 @@
-# Minecraft AFK bot
+# Minecraft AFK Bot
 
-The best minecraft afk bot
-
-
-## Screenshots
-
-![Logo](https://i.imgur.com/f0XLsBC.png)
+A lightweight, customizable Minecraft AFK automation tool designed to keep your account active on servers while improving efficiency and reducing the need for supervision.
 
 
-## Installation
+---
 
-Install is really eazy click on the code button and install as zip file extract the zip and your command prompt type
+## 📸 Preview
+
+**Console Preview**
+
+![Preview](assets/image.png)
+---
+
+## 📥 Installation
+
+1. Click **Code** → **Download ZIP**
+2. Extract the ZIP anywhere
+3. Open the extracted folder
+4. Run:
 
 ```batch
-  cd LOCATION
-  start OPENME.bat
+cd src
+start RUNME.bat
+````
+
+Or simply double-click **RUNME.bat**
+
+---
+
+## ⭐ Features
+
+* ⏱ Custom jump interval
+* 🍗 Auto-eating
+* 🛡 Advanced anti-AFK system
+* 🪙 Auto-sell (economy servers)
+* 🗡 Custom hit delay (works on all versions)
+* 🎯 Hold-to-run mode (no toggle)
+* 💬 Chat spam mode (custom watermark)
+* 🐞 Debug / logging tools
+
+---
+
+## 🔍 Feature Comparison
+
+| Feature                    | Vanilla Minecraft | This AFK Bot |
+| -------------------------- | ----------------- | ------------ |
+| Auto Jump Interval         | ❌                 | ✅            |
+| Auto Eating                | ❌                 | ✅            |
+| Anti-AFK                   | ⚠️ Basic / None   | ✅ Advanced   |
+| Auto Selling (Eco Servers) | ❌                 | ✅            |
+| Custom Hit Delay           | ❌                 | ✅ Universal  |
+| Spam Message System        | ❌                 | ✅            |
+| Custom Settings            | ⚠️ Limited        | ✅ Full       |
+| Debug Options              | ❌                 | ✅            |
+
+---
+
+## 💡 Why This Bot?
+
+Most AFK solutions are either:
+
+* Too simple
+* Easily detected
+* Too resource-heavy
+* Or lack flexibility
+
+This bot focuses on **control, configurability, and consistency**.
+
+**What makes it better?**
+
+* Doesn’t rely on mods
+* Runs externally
+* Uses human-like timing
+* Simple configuration
+* Works across multiple server types
+* Built specifically for long-term AFK sessions
+* Lightweight, minimal resource usage
+
+If you want a bot that just works without bloated features or complex setups, this is it.
+
+---
+
+## ⚙️ Configuration
+
+All settings use basic Python variables.
+
+Example:
+
+```python
+jump_delay = 2.5
+auto_eat_threshold = 6
+spam_message = "AFK Bot Active"
 ```
-or just double click on the OPENME.bat may be called CLICKME.bat
-    
-## Features
 
-- Custom jump interval
-- Debug features
-- Auto eat
-- Advanced anti afk
-- Auto selling on ecconomy servers
-- Custom hit delay (works on all versions)
-- Hold mode (no toggle mode yet)
-- Spam mode which will spam the chat with a custom watermark
+**Rules:**
 
-## Optimizations
+* Numbers → no quotes
+* Text → `"quotes only"`
 
-There isnt any opimizations currently as the program has to have a slight delay to get the maximum amount of damage
+More info:
+[https://www.geeksforgeeks.org/python-variables/](https://www.geeksforgeeks.org/python-variables/)
 
+---
 
+## ⚡ Optimization
 
-## Used By
+A slight delay is intentionally included to stabilize timing and avoid repetitive patterns.
 
-This project is used by hundreds of people on all kinds of servers they are all undetected and unbanned!
+Future versions will include:
 
+* Performance presets
+* Randomized behavior modes
+* Smart server adaptation
 
-## Feedback
+---
 
-If you have any feedback, please reach out to me at cheatinginapezx@gmail.com
-## FAQ
+## 🧩 Troubleshooting
 
-#### how do I change the settings
+When creating an issue, include:
 
-they are all basic python variables keep the equal sign and if its letters use quotes and if its numbers leave it just as a number
+✅ Error message / screenshot
+✅ Server type
+✅ Minecraft version
+✅ Expected vs actual behavior
 
-If you are still confused use [geeks for geeks](geeksforgeeks.com)
+This helps solve issues faster.
 
-#### Why isnt it working
+---
 
-why isnt it working is too broad please make an issue and explain error :)
+## 🤝 Contributing
 
+Contributions are always welcome:
 
-## Acknowledgements
- - [How to write a Good readme](https://bulldogjob.com/news/449-how-to-write-a-good-readme-for-your-github-project)
- - [Inspiration](https://www.youtube.com/shorts/flvX3PDVGbQ)
+1. Fork the repo
+2. Create a new branch
+3. Make your changes
+4. Open a Pull Request
 
-## Contributing
+---
 
-Contributions are always welcome!
+## 💬 Feedback
 
+📧 **[cheatinginapezx@gmail.com](mailto:cheatinginapezx@gmail.com)**
 
+Suggestions & improvements are welcome.
 
-Please adhere to this project's `licence`.
+---
 
+## 🙏 Acknowledgements
 
-## License
+* [https://bulldogjob.com/news/449-how-to-write-a-good-readme-for-your-github-project](https://bulldogjob.com/news/449-how-to-write-a-good-readme-for-your-github-project)
+* [https://www.youtube.com/shorts/flvX3PDVGbQ](https://www.youtube.com/shorts/flvX3PDVGbQ)
 
-[Unlicense](https://choosealicense.com/licenses/unlicense/)
+---
+
+## 📜 License
+
+This project is released under the **Unlicense**
+You are free to modify, distribute, or use it however you like.
+
+🔗 [https://choosealicense.com/licenses/unlicense/](https://choosealicense.com/licenses/unlicense/)

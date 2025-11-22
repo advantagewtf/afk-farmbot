@@ -1,0 +1,7 @@
+pyautogui
+mouse
+pygetwindow
+opencv-python
+numpy
+requests
+colorama
