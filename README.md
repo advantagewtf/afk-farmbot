@@ -2,7 +2,6 @@
 
 A lightweight, customizable Minecraft AFK automation tool designed to keep your account active on servers while improving efficiency and reducing the need for supervision.
 
-
 ---
 
 ## 📸 Preview
@@ -10,6 +9,7 @@ A lightweight, customizable Minecraft AFK automation tool designed to keep your 
 **Console Preview**
 
 ![Preview](assets/image.png)
+
 ---
 
 ## 📥 Installation
@@ -39,20 +39,6 @@ Or simply double-click **RUNME.bat**
 * 💬 Chat spam mode (custom watermark)
 * 🐞 Debug / logging tools
 
----
-
-## 🔍 Feature Comparison
-
-| Feature                    | Vanilla Minecraft | This AFK Bot |
-| -------------------------- | ----------------- | ------------ |
-| Auto Jump Interval         | ❌                 | ✅            |
-| Auto Eating                | ❌                 | ✅            |
-| Anti-AFK                   | ⚠️ Basic / None   | ✅ Advanced   |
-| Auto Selling (Eco Servers) | ❌                 | ✅            |
-| Custom Hit Delay           | ❌                 | ✅ Universal  |
-| Spam Message System        | ❌                 | ✅            |
-| Custom Settings            | ⚠️ Limited        | ✅ Full       |
-| Debug Options              | ❌                 | ✅            |
 
 ---
 
@@ -83,24 +69,25 @@ If you want a bot that just works without bloated features or complex setups, th
 
 ## ⚙️ Configuration
 
-All settings use basic Python variables.
+All settings use basic json variables. to edit the config go to src/config.json
 
 Example:
 
-```python
-jump_delay = 2.5
-auto_eat_threshold = 6
-spam_message = "AFK Bot Active"
+```json
+{ 
+    "hotbar_keybind": "q",
+    "jumpKeybind": "space",
+    "legit": false,
+    "hit_delay": 0.64
+}
 ```
 
 **Rules:**
 
-* Numbers → no quotes
+* Numbers → `no quotes`
 * Text → `"quotes only"`
-
-More info:
-[https://www.geeksforgeeks.org/python-variables/](https://www.geeksforgeeks.org/python-variables/)
-
+* False → `disabled`
+* True → `enabled`
 ---
 
 ## ⚡ Optimization
@@ -140,18 +127,8 @@ Contributions are always welcome:
 ---
 
 ## 💬 Feedback
-
-📧 **[cheatinginapezx@gmail.com](mailto:cheatinginapezx@gmail.com)**
-
 Suggestions & improvements are welcome.
-
----
-
-## 🙏 Acknowledgements
-
-* [https://bulldogjob.com/news/449-how-to-write-a-good-readme-for-your-github-project](https://bulldogjob.com/news/449-how-to-write-a-good-readme-for-your-github-project)
-* [https://www.youtube.com/shorts/flvX3PDVGbQ](https://www.youtube.com/shorts/flvX3PDVGbQ)
-
+Please create an issue and I am willing to work on it.
 ---
 
 ## 📜 License

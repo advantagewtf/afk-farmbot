@@ -1,0 +1,7 @@
+pywin32
+mouse
+opencv-python
+numpy
+requests
+colorama
+fade
