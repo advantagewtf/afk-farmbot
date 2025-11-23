@@ -1,0 +1,24 @@
+{
+    "enable_debug": true,
+    "sword_keybind": "q",
+    "jump_keybind": "space",
+    "jump_cycles": 0,
+    "hit_delay": 0.64,
+    "legit_delays": false,
+    "eat_food": false,
+    "food_hotkey": "7",
+    "food_png": "assets/food.png",
+    "sell_items": false,
+    "sell_command": "sellall inventory",
+    "sell_cycles": 100,
+    "spam_chat": false,
+    "spam_messages": [
+        "Hello!",
+        "I am AFK farming!",
+        "Bot by Drexxy!",
+        "Have a nice day!"
+    ],
+    "spam_cycles": 5,
+    "hold": true,
+    "hold_key": "f"
+}

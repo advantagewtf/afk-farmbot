@@ -97,15 +97,18 @@ def loop():
         debug(enable_debug, "Ate Food")
 
 
-if (
-    legit_mode
-):  # randomize completely if you're using legit mode. helps with legit delays
+if legit_mode:  
+    # randomize completely if you're using legit mode. helps with legit delays
     random.seed(str(time.time()) + str(random.random()) + str(os.urandom(16)))
 
 # main loop here <3
-while not key.is_pressed("q"):
-    if hold:
-        while key.is_pressed(hold_key):
+if __name__ == "__main__":
+    while not key.is_pressed("q"):
+        if hold:
+            while key.is_pressed(hold_key):
+                loop()
+        else:
             loop()
-    else:
-        loop()
+    print("thanks for using moonlight afk")
+    print("https://github.com/moonlightrblx/afk-farmbot")
+    print("hope you enjoyed!")
